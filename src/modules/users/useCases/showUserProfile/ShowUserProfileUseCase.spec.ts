@@ -15,7 +15,7 @@ let showUserProfileUseCase: ShowUserProfileUseCase;
 
 interface IPayload {
     sub: string;
-}
+} 
 
 describe("Authenticate User", ()=>{
 

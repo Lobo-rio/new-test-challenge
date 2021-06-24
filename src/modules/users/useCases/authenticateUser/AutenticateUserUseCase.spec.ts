@@ -3,6 +3,7 @@ import { CreateUserUseCase } from "../createUser/CreateUserUseCase";
 import { AuthenticateUserUseCase } from "./AuthenticateUserUseCase";
 
 
+
 let createUserUseCase: CreateUserUseCase;
 let userRepositoryInMemory: InMemoryUsersRepository;
 let authenticateUserUseCase: AuthenticateUserUseCase;
@@ -30,6 +31,8 @@ describe("Authenticate User", ()=>{
             email,
             password
         }); 
+
+        console.log(user);
 
         expect(user).toHaveProperty("token");
     });

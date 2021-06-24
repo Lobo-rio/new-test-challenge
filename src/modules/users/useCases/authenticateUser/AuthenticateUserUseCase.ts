@@ -1,6 +1,7 @@
 import { inject, injectable } from "tsyringe";
 import { compare } from 'bcryptjs';
 import { sign } from 'jsonwebtoken';
+require('dotenv').config()
 
 import authConfig from '../../../../config/auth';
 
